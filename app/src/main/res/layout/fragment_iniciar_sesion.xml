@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IniciarSesionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28sp"
+            android:layout_marginVertical="45sp"
+            android:fontFamily="serif"
+            android:text="Inicia Sesión"
+            android:textAlignment="center"
+            android:textColor="#C6C6C6"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28sp"
+            android:layout_marginTop="100sp"
+            android:layout_marginBottom="48sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inpt_InSes_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:hint="Correo"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28sp"
+            android:layout_marginBottom="48sp">
+
+            <EditText
+                android:id="@+id/inpt_InSes_Passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_InSes_login"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_marginHorizontal="24sp"
+            android:layout_marginTop="20sp"
+            android:fontFamily="serif"
+            android:text="Iniciar sesion"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
